@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Floating Label Forms</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="floating-label">
+            <input id="myInput" type="text" name="name" class="floating-input form-control" required>
+            <label for="myInput">Enter Your Name</label>
+        </div>
+        <div class="floating-label">
+            <input id="pass" type="password" name="pass" class="floating-input form-control" required>
+            <label for="pass">Enter Password</label>
+        </div>
+        <div class="floating-label">
+            <select class="floating-input form-control" id="select" onclick="this.setAttribute('value', this.value);" value="" required>
+                <option value="" selected disabled></option>
+                <option value='A'>A</option>
+                <option value='B'>B</option>
+                <option value='C'>C</option>
+                <option value='D'>D</option>
+            </select>
+            <label for="select">Enter Semester</label>
+        </div>
+        <div class="floating-label">
+            <input class="floating-input form-control" name="date" type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required id="date">
+            <label for="date">Enter Date</label>
+        </div>
+    </div>
+</body>
+
+</html>
